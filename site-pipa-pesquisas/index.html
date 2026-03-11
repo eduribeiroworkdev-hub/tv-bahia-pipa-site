@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipa Pesquisas - Inteligência e Tendências</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        // Inicializa com sua Chave Pública (pegue no painel do EmailJS)
+        emailjs.init("qRVFamsAaql-9cLib");
+    })();
+    </script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img id="logo-pipa" src="assets/images/Logo.png" alt="Pipa Pesquisas">
+                </a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#pesquisas" class="nav-link">Nossas Pesquisas</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="podcast.html" class="nav-link">Podcast</a></li>
+                    <li><a href="#participe" class="nav-link">Participe</a></li>
+                    <li><a href="#contato" class="nav-link btn-nav-contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-slider">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper" id="hero-slides">
+                </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="pesquisas-section" id="pesquisas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-gradient">Nossas Pesquisas</h2>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="todas">Todas</button>
+                    <button class="filter-btn" data-filter="consumo">Consumo</button>
+                    <button class="filter-btn" data-filter="tendencias">Tendências</button>
+                    <button class="filter-btn" data-filter="comportamento">Comportamento</button>
+                </div>
+            </div>
+            <div class="pesquisas-grid" id="pesquisas-grid">
+                <p class="loading-text">Carregando...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/Equipe.jpg" alt="Equipe Pipa">
+                    <div class="gradient-bg"></div>
+                </div>
+                <div class="about-text">
+                    <h4 class="pre-title text-gradient">Quem Somos</h4>
+                    <h2 class="section-title">Inteligência com a cara da Bahia</h2>
+                    <p>A equipe de Pesquisa e Inteligência da Rede Bahia conduz o <strong>Pipa Pesquisas</strong>. Monitoramos o pulso do comportamento baiano para transformar dados em decisões estratégicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="participe-section" id="participe">
+        <div class="participe-box bg-gradient-pipa">
+            <div class="participe-content">
+                <h2>Faça parte das nossas pesquisas</h2>
+                <p>Sua opinião molda o futuro do mercado baiano.</p>
+                <a href="formulario.html" class="btn-cta-white">Quero Participar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="assets/images/Logo.png" alt="Pipa" class="footer-logo" style="filter: brightness(0) invert(1); width: 120px;"> 
+                    <h3>Vamos conversar?</h3>
+                    <p class="footer-desc">Entre em contato para pesquisas sob demanda ou dúvidas.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>E-mail</span>
+                                <a href="mailto:pipapesquisas@redebahia.com.br">pipapesquisas@redebahia.com.br</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span>Telefone</span>
+                                <a href="tel:+5571999572119">(71) 99957-2119</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-icons-footer">
+                        <a href="https://www.instagram.com/pipapesquisas?igsh=aXAwdGFrYjBpamow" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/pipa-pesquisas/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5571999572119" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@pipapesquisas6893?si=F_NABPdmzv22UxSZ" class="social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/show/5QJBDsa4493ztKgpn6NQhu?si=RSjDJvBPQIyOcQ3SSa7Zzw" class="social-btn"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-form-area">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Seu Nome</label>
+                            <input type="text" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label>Seu E-mail</label>
+                            <input type="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea rows="4" required placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit bg-gradient-pipa">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pipa Pesquisas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

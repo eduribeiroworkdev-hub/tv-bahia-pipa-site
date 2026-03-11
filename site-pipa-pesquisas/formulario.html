@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participe das Pesquisas | Pipa Pesquisas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/formulario.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img id="logo-pipa" src="assets/images/Logo.png" alt="Pipa Pesquisas">
+                </a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="podcast.html" class="nav-link">Podcast</a></li>
+                    <li><a href="#contato" class="nav-link btn-nav-contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO DO FORMULÁRIO -->
+    <section class="form-hero">
+        <div class="container">
+            <div class="form-hero-content">
+                <span class="form-tag">Faça Parte</span>
+                <h1>Participe das nossas pesquisas</h1>
+                <p>Sua opinião molda o futuro do mercado baiano. Preencha o formulário abaixo e seja convidado para participar das próximas pesquisas Pipa!</p>
+                <div class="form-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Gratuito</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Dados Seguros</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-clock"></i>
+                        <span>5 minutos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO PRINCIPAL -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                
+                <!-- Indicador de Progresso -->
+                <div class="progress-indicator">
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-circle">1</div>
+                        <span>Dados Pessoais</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-circle">2</div>
+                        <span>Localização</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-circle">3</div>
+                        <span>Perfil Socioeconômico</span>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <form id="participante-form" class="multi-step-form">
+                    
+                    <!-- ETAPA 1: DADOS PESSOAIS -->
+                    <div class="form-step active" data-step="1">
+                        <h2 class="step-title">Dados Pessoais</h2>
+                        <p class="step-subtitle">Precisamos conhecer você melhor</p>
+
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="nome">Nome Completo <span class="required">*</span></label>
+                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone/WhatsApp <span class="required">*</span></label>
+                                <input type="tel" id="telefone" name="telefone" required placeholder="(71) 99999-9999">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="data_nascimento">Data de Nascimento <span class="required">*</span></label>
+                                <input type="date" id="data_nascimento" name="data_nascimento" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genero">Gênero <span class="required">*</span></label>
+                                <select id="genero" name="genero" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="nao-binario">Não-binário</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="prefiro-nao-informar">Prefiro não informar</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orientacao_sexual">Orientação Sexual</label>
+                                <select id="orientacao_sexual" name="orientacao_sexual">
+                                    <option value="">Selecione...</option>
+                                    <option value="heterossexual">Heterossexual</option>
+                                    <option value="homossexual">Homossexual</option>
+                                    <option value="bissexual">Bissexual</option>
+                                    <option value="pansexual">Pansexual</option>
+                                    <option value="assexual">Assexual</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="prefiro-nao-informar">Prefiro não informar</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="raca">Raça/Cor <span class="required">*</span></label>
+                                <select id="raca" name="raca" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="branca">Branca</option>
+                                    <option value="preta">Preta</option>
+                                    <option value="parda">Parda</option>
+                                    <option value="amarela">Amarela</option>
+                                    <option value="indigena">Indígena</option>
+                                    <option value="prefiro-nao-informar">Prefiro não informar</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="btn-next" data-next="2">
+                                Próximo <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 2: LOCALIZAÇÃO -->
+                    <div class="form-step" data-step="2">
+                        <h2 class="step-title">Localização</h2>
+                        <p class="step-subtitle">Onde você mora na Bahia?</p>
+
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="cidade">Cidade <span class="required">*</span></label>
+                                <select id="cidade" name="cidade" required>
+                                    <option value="">Selecione sua cidade...</option>
+                                    <option value="salvador">Salvador</option>
+                                    <option value="feira-de-santana">Feira de Santana</option>
+                                    <option value="vitoria-da-conquista">Vitória da Conquista</option>
+                                    <option value="camaçari">Camaçari</option>
+                                    <option value="itabuna">Itabuna</option>
+                                    <option value="lauro-de-freitas">Lauro de Freitas</option>
+                                    <option value="ilheus">Ilhéus</option>
+                                    <option value="jequie">Jequié</option>
+                                    <option value="teixeira-de-freitas">Teixeira de Freitas</option>
+                                    <option value="alagoinhas">Alagoinhas</option>
+                                    <option value="porto-seguro">Porto Seguro</option>
+                                    <option value="simoes-filho">Simões Filho</option>
+                                    <option value="paulo-afonso">Paulo Afonso</option>
+                                    <option value="eunapolis">Eunápolis</option>
+                                    <option value="santo-antonio-de-jesus">Santo Antônio de Jesus</option>
+                                    <option value="valenca">Valença</option>
+                                    <option value="candeias">Candeias</option>
+                                    <option value="guanambi">Guanambi</option>
+                                    <option value="jacobina">Jacobina</option>
+                                    <option value="serrinha">Serrinha</option>
+                                    <option value="senhor-do-bonfim">Senhor do Bonfim</option>
+                                    <option value="dias-davila">Dias d'Ávila</option>
+                                    <option value="brumado">Brumado</option>
+                                    <option value="luis-eduardo-magalhaes">Luís Eduardo Magalhães</option>
+                                    <option value="irecê">Irecê</option>
+                                    <option value="outra">Outra cidade</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group cidade-outro" style="display: none;">
+                                <label for="cidade_outro">Qual cidade?</label>
+                                <input type="text" id="cidade_outro" name="cidade_outro" placeholder="Digite o nome da cidade">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="tempo_residencia">Há quanto tempo mora na Bahia? <span class="required">*</span></label>
+                                <select id="tempo_residencia" name="tempo_residencia" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="nascido">Nasci na Bahia</option>
+                                    <option value="menos-1-ano">Menos de 1 ano</option>
+                                    <option value="1-3-anos">1 a 3 anos</option>
+                                    <option value="3-5-anos">3 a 5 anos</option>
+                                    <option value="5-10-anos">5 a 10 anos</option>
+                                    <option value="mais-10-anos">Mais de 10 anos</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="btn-prev" data-prev="1">
+                                <i class="fas fa-arrow-left"></i> Voltar
+                            </button>
+                            <button type="button" class="btn-next" data-next="3">
+                                Próximo <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 3: PERFIL SOCIOECONÔMICO -->
+                    <div class="form-step" data-step="3">
+                        <h2 class="step-title">Perfil Socioeconômico</h2>
+                        <p class="step-subtitle">Informações sobre sua família e renda</p>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="escolaridade">Escolaridade <span class="required">*</span></label>
+                                <select id="escolaridade" name="escolaridade" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="fundamental-incompleto">Fundamental Incompleto</option>
+                                    <option value="fundamental-completo">Fundamental Completo</option>
+                                    <option value="medio-incompleto">Médio Incompleto</option>
+                                    <option value="medio-completo">Médio Completo</option>
+                                    <option value="superior-incompleto">Superior Incompleto</option>
+                                    <option value="superior-completo">Superior Completo</option>
+                                    <option value="pos-graduacao">Pós-graduação</option>
+                                    <option value="mestrado">Mestrado</option>
+                                    <option value="doutorado">Doutorado</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ocupacao">Ocupação/Profissão <span class="required">*</span></label>
+                                <input type="text" id="ocupacao" name="ocupacao" required placeholder="Ex: Estudante, Analista, Vendedor...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="situacao_emprego">Situação de Emprego <span class="required">*</span></label>
+                                <select id="situacao_emprego" name="situacao_emprego" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="empregado-clt">Empregado CLT</option>
+                                    <option value="servidor-publico">Servidor Público</option>
+                                    <option value="autonomo">Autônomo</option>
+                                    <option value="empresario">Empresário</option>
+                                    <option value="desempregado">Desempregado</option>
+                                    <option value="estudante">Estudante</option>
+                                    <option value="aposentado">Aposentado</option>
+                                    <option value="do-lar">Do lar</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="renda_familiar">Renda Familiar Mensal <span class="required">*</span></label>
+                                <select id="renda_familiar" name="renda_familiar" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="ate-1412">Até R$ 1.412 (1 salário mínimo)</option>
+                                    <option value="1412-2824">R$ 1.412 a R$ 2.824 (1 a 2 SM)</option>
+                                    <option value="2824-4236">R$ 2.824 a R$ 4.236 (2 a 3 SM)</option>
+                                    <option value="4236-7060">R$ 4.236 a R$ 7.060 (3 a 5 SM)</option>
+                                    <option value="7060-14120">R$ 7.060 a R$ 14.120 (5 a 10 SM)</option>
+                                    <option value="acima-14120">Acima de R$ 14.120 (+ de 10 SM)</option>
+                                    <option value="prefiro-nao-informar">Prefiro não informar</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pessoas_familia">Quantas pessoas moram com você? <span class="required">*</span></label>
+                                <select id="pessoas_familia" name="pessoas_familia" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="1">Moro sozinho(a)</option>
+                                    <option value="2">2 pessoas</option>
+                                    <option value="3">3 pessoas</option>
+                                    <option value="4">4 pessoas</option>
+                                    <option value="5">5 pessoas</option>
+                                    <option value="6-ou-mais">6 ou mais pessoas</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipo_moradia">Tipo de Moradia <span class="required">*</span></label>
+                                <select id="tipo_moradia" name="tipo_moradia" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="propria-quitada">Própria (quitada)</option>
+                                    <option value="propria-financiada">Própria (financiada)</option>
+                                    <option value="alugada">Alugada</option>
+                                    <option value="cedida">Cedida</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="interesses">Áreas de Interesse para Pesquisas (Opcional)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interesses[]" value="consumo">
+                                        <span>Consumo</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interesses[]" value="comportamento">
+                                        <span>Comportamento</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interesses[]" value="tendencias">
+                                        <span>Tendências</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interesses[]" value="cultura">
+                                        <span>Cultura</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interesses[]" value="tecnologia">
+                                        <span>Tecnologia</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interesses[]" value="saude">
+                                        <span>Saúde</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label class="checkbox-label checkbox-terms">
+                                    <input type="checkbox" id="termos" name="termos" required>
+                                    <span>Concordo em receber convites para pesquisas e aceito os <a href="#" target="_blank">termos de uso</a> e <a href="#" target="_blank">política de privacidade</a>. <span class="required">*</span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="btn-prev" data-prev="2">
+                                <i class="fas fa-arrow-left"></i> Voltar
+                            </button>
+                            <button type="submit" class="form-btn-submit">
+                                <i class="fas fa-paper-plane"></i> Finalizar Inscrição
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- Modal de Sucesso -->
+                <div id="success-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Inscrição realizada com sucesso!</h2>
+                        <p>Obrigado por se cadastrar! Em breve você receberá convites para participar das nossas pesquisas.</p>
+                        <button class="form-btn-modal-close" onclick="window.location.href='index.html'">
+                            Voltar para Home
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="assets/images/Logo.png" alt="Pipa" class="footer-logo" style="filter: brightness(0) invert(1); width: 120px;"> 
+                    <h3>Vamos conversar?</h3>
+                    <p class="footer-desc">Entre em contato para pesquisas sob demanda ou dúvidas.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>E-mail</span>
+                                <a href="mailto:pipapesquisas@redebahia.com.br">pipapesquisas@redebahia.com.br</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span>Telefone</span>
+                                <a href="tel:+5571999572119">(71) 99957-2119</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-icons-footer">
+                        <a href="https://www.instagram.com/pipapesquisas?igsh=aXAwdGFrYjBpamow" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/pipa-pesquisas/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@pipapesquisas6893?si=F_NABPdmzv22UxSZ" class="social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/show/5QJBDsa4493ztKgpn6NQhu?si=RSjDJvBPQIyOcQ3SSa7Zzw" class="social-btn"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-form-area">
+                    <h3>Dúvidas sobre o formulário?</h3>
+                    <p style="color: #ccc; margin-bottom: 20px;">Entre em contato conosco.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pipa Pesquisas. Todos os direitos reservados.</p>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/main.js"></script>
+        
+        <script src="assets/formulario.js"></script> 
+    </body>
+</html>

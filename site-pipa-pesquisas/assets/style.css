@@ -1,0 +1,1095 @@
+/* ==========================================
+   PIPA PESQUISAS - ESTILO MODERNO (CORRIGIDO)
+   ========================================== */
+
+:root {
+    --color-primary: #ff0a72; 
+    --color-beige: #eed7c3;    
+    --color-orange: #F75E12;       
+    --color-purple: #8938f2;        
+    --color-blue: #468FFB;          
+    --color-black: #000000;         
+    --color-dark-gray: #1a1a1a;
+    --color-white: #ffffff;
+    
+
+    --font-main: 'Inter', sans-serif;
+    --border-radius: 12px;  
+    --container-width: 1240px;
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
+    --shadow-hover: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font-main); background-color: #f9f9f9; color: var(--color-black); line-height: 1.5; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+
+.container { max-width: var(--container-width); margin: 0 auto; padding: 0 20px; }
+
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 15px 0; 
+}
+
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative;
+}
+
+.logo {
+    display: block;
+    position: relative;
+    z-index: 1001;
+    width: 180px; 
+    height: 50px; 
+}
+
+
+.logo img {
+    height: 150px; /* O tamanho fixo grande que você quer */
+    width: auto;   /* Proporcional */
+    
+    position: absolute; /* Sai do fluxo para não esticar o header */
+    top: -45px;    /* Puxa para cima para centralizar visualmente (ajuste se precisar) */
+    left: 0;
+    
+    transition: 0.3s;
+}
+
+.nav-menu { 
+    display: flex; 
+    gap: 30px; 
+    align-items: center; 
+    /* Garante que o menu fique na direita */
+    margin-left: auto; 
+}
+
+/* Mantém os estilos dos links originais */
+.nav-link { font-weight: 500; font-size: 0.95rem; color: var(--color-dark-gray); position: relative; }
+.nav-link:hover { color: var(--color-primary); }
+.nav-link:not(.btn-nav-contato)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-orange));
+    transition: width 0.3s ease;
+}
+.nav-link:not(.btn-nav-contato):hover::after { width: 100%; }
+
+/* Botão de Contato no Menu */
+.btn-nav-contato {
+    background-color: var(--color-black);
+    color: var(--color-white) !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.btn-nav-contato:hover { background-color: var(--color-primary); transform: translateY(-2px); }
+
+/* Menu Mobile */
+.menu-toggle { display: none; flex-direction: column; gap: 6px; background: none; border: none; cursor: pointer;}
+.menu-toggle span { width: 25px; height: 2px; background: var(--color-black); transition: 0.5s; }
+
+/* ================= HERO SLIDER ================ */
+.hero-slider {
+    padding: 40px 0 60px;
+    background-color: var(--color-beige);
+}
+
+.hero-slide-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: var(--color-white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    min-height: 450px;
+}
+
+.hero-card { 
+    background: white; border-radius: 24px; overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; min-height: 450px; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* IMPORTANTE: Impede que a tag e o botão estiquem */
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    flex: 1; 
+}
+
+.hero-content h1 { 
+    font-size: 3rem; font-weight: 900; line-height: 1.1; 
+    margin-bottom: 10px; letter-spacing: -1px; 
+}
+.hero-content p { 
+    font-size: 1.1rem; color: #666; margin-bottom: 10px; 
+}
+
+/* Correção específica para o botão dentro do Hero não ficar largura total */
+.hero-content .btn-submit, 
+.hero-content .btn-primary {
+    width: auto !important;
+    display: inline-block;
+    padding: 15px 35px;
+    text-align: center;
+}
+
+.hero-img { flex: 1; background-size: cover; background-position: center; min-height: 300px; }
+
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.tag.destaque { background: rgba(255, 10, 114, 0.1); color: var(--color-primary); }
+
+.tag.tendencias { 
+    background: rgba(247, 94, 18, 0.1); 
+    color: var(--color-orange); 
+}
+
+.tag.comportamento { 
+    background: rgba(137, 56, 242, 0.1); 
+    color: var(--color-purple); 
+}
+
+.tag.consumo { 
+    background: rgba(70, 143, 251, 0.1); 
+    color: var(--color-blue); 
+}
+
+/* Caso genérico */
+.tag.geral {
+    background: #f0f0f0;
+    color: #666;
+}
+/* ================= PESQUISAS GRID ================= */
+.pesquisas-section { padding: 80px 0; }
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-title { font-size: 2.5rem; font-weight: 800; position: relative; }
+
+.category-filters { display: flex; gap: 10px; flex-wrap: wrap; }
+.filter-btn {
+    background: transparent;
+    border: 2px solid #e0e0e0;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: var(--font-main);
+}
+.filter-btn:hover, .filter-btn.active {
+    border-color: var(--color-dark-gray);
+    background: var(--color-dark-gray);
+    color: white;
+}
+
+.pesquisas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+
+.card-img { height: 220px; overflow: hidden; position: relative; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.card:hover .card-img img { transform: scale(1.05); }
+
+.card-body { padding: 25px; flex: 1; display: flex; flex-direction: column; }
+.card-body h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 15px; line-height: 1.3; }
+.card-body p { color: #666; font-size: 0.95rem; margin-bottom: 20px; flex: 1; }
+
+.card-link {
+    color: var(--color-primary);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.card-link:hover { gap: 10px; }
+
+/* ================= SOBRE ================= */
+.about-section { padding: 80px 0; background: white; }
+.about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+.about-image { position: relative; }
+.about-image img { border-radius: 24px; position: relative; z-index: 2; box-shadow: var(--shadow-hover); }
+.about-pattern {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: var(--color-purple);
+    border-radius: 24px;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.pre-title { color: var(--color-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.about-text p { margin-bottom: 20px; font-size: 1.1rem; color: #555; }
+
+/* ================= PODCAST ================= */
+.podcast-section { padding: 80px 0; background-color: #f4f4f4; }
+.section-subtitle { color: #666; margin-bottom: 40px; font-size: 1.2rem; }
+
+/* ================= PARTICIPE (CTA - Ponta a Ponta) ================= */
+.participe-section { 
+    padding: 0; 
+    width: 100%;
+}
+
+.participe-box {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.participe-content {
+    max-width: var(--container-width);
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+}
+.participe-content h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
+.participe-content p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+
+.btn-cta-white {
+    background: white;
+    color: var(--color-primary);
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.btn-cta-white:hover { background: var(--color-black); color: white; }
+
+/* ================= FOOTER / CONTATO (CORRIGIDO) ================= */
+.footer { 
+    background: #000000 !important; /* Fundo Preto */
+    color: #ffffff !important; /* Texto Branco */
+    padding: 80px 0 20px; 
+}
+
+.footer-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; margin-bottom: 60px; }
+
+.footer h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-desc {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Itens de Contato */
+.contact-items { display: flex; flex-direction: column; gap: 20px; }
+.contact-item { display: flex; align-items: center; gap: 15px; }
+.icon-box { 
+    width: 45px; height: 45px; 
+    background: rgba(255,255,255,0.1); 
+    border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center; 
+    color: var(--color-primary); 
+    font-size: 1.2rem; 
+}
+.contact-item span { 
+    display: block; font-size: 0.8rem; text-transform: uppercase; 
+    font-weight: 700; color: #999; letter-spacing: 0.5px; 
+}
+.contact-item a, .contact-item p { 
+    font-weight: 600; color: white; font-size: 1.1rem; 
+}
+
+/* Formulário com Fundo Escuro */
+.footer-form-area {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 24px;
+}
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.9rem; color: white; }
+
+.form-group input, .form-group textarea { 
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 1px solid rgba(255,255,255,0.2); 
+    border-radius: 8px; 
+    font-family: inherit; font-size: 1rem; 
+    
+    /* Correção de cor para legibilidade no fundo preto */
+    background: rgba(255,255,255,0.9); 
+    color: #333; 
+}
+
+.form-group input:focus, .form-group textarea:focus { 
+    outline: none; 
+    border-color: var(--color-primary); 
+    background: white;
+}
+
+/* Botão Enviar */
+.btn-submit {
+    width: 100%;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-submit:hover { background: white; color: var(--color-black); }
+
+/* Redes Sociais Footer */
+.social-icons-footer {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+.social-btn:hover {
+    background: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 991px) {
+    .header { height: auto; padding: 10px 0; }
+    .logo { width: auto; height: auto; }
+    .logo img { position: static; height: 80px; margin-bottom: 5px; }
+    
+    .menu-toggle { display: flex; }
+    .nav-menu {
+        position: absolute; top: 100%; left: 0; width: 100%;
+        background: white; flex-direction: column; padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        display: none;
+        margin-left: 0;
+    }
+    .nav-menu.active { display: flex; }
+    
+    .hero-card { flex-direction: column; }
+    .hero-img { min-height: 250px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2rem; }
+    .participe-box { flex-direction: column; text-align: center; padding: 40px 20px; }
+}
+
+/* Gradientes Padrão */
+.bg-gradient-pipa { background: linear-gradient(135deg, var(--color-primary), var(--color-purple)); }
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-purple), var(--color-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* --- Estilo das Setas do Slider (Estilo Globo Gente) --- */
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+    color: var(--color-primary); /* Cor da seta (Rosa) */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Bolinha redonda */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Tamanho do ícone da seta */
+.hero-swiper .swiper-button-next::after,
+.hero-swiper .swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Efeito ao passar o mouse */
+.hero-swiper .swiper-button-next:hover,
+.hero-swiper .swiper-button-prev:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 10, 114, 0.2);
+}
+
+/* Ajuste de posição para não ficar colado na borda em telas grandes */
+@media (min-width: 1300px) {
+    .hero-swiper .swiper-button-prev { left: 40px; }
+    .hero-swiper .swiper-button-next { right: 40px; }
+}
+
+/* Esconde as setas em mobile para não atrapalhar a leitura (padrão de UX) */
+@media (max-width: 768px) {
+    .hero-swiper .swiper-button-next,
+    .hero-swiper .swiper-button-prev {
+        display: none;
+    }
+}
+
+/* ==========================================
+   PIPACAST - ESTILO ESPECÍFICO (ATUALIZADO)
+   ========================================== */
+
+:root {
+    /* Nova Paleta PipaCast */
+    --pipacast-dark: #5e226c;    /* Roxo Escuro (Texto/Fundo) */
+    --pipacast-med: #863b7e;     /* Roxo Médio */
+    --pipacast-blue: #1bc1eb;    /* Azul Ciano (Original) */
+    --pipacast-pink: #d262ae;    /* Rosa Suave */
+    --pipacast-deep: #573490;    /* Roxo Azulado */
+}
+
+/* --- Header Vinheta (Intro) --- */
+.vignette-section {
+    width: 100%;
+    height: 80vh; /* Altura quase cheia */
+    min-height: 500px;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vignette-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que preencha tudo sem distorcer */
+    opacity: 0.6; /* Um pouco mais escuro para o texto aparecer */
+    z-index: 1;
+}
+
+.vignette-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.nav-link.active-pipacast { font-weight: 500; font-size: 0.95rem; color: var(--color-dark-gray); position: relative; }
+.nav-link.active-pipacast:hover { color: var(--pipacast-med); }
+.nav-link.active-pipacast:not(.btn-nav-contato)::after {
+    content: '';
+    position: absolute;
+    width: 0;   
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, var(--pipacast-med), var(--pipacast-pink));
+    transition: width 0.3s ease;
+}
+.nav-link.active-pipacast:not(.btn-nav-contato):hover::after { width: 100%; }
+
+/* Botão de Contato no Menu */
+.nav-link.active-pipacast.btn-nav-contato {
+    background-color: var(--pipacast-dark);
+    color: var(--color-white) !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.nav-link.active-pipacast.btn-nav-contato:hover { background-color: var(--pipacast-pink); transform: translateY(-2px); }
+/* --- Grid de Episódios --- */
+
+.episodes-section {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f9f9f9, #fff);
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Cards um pouco mais largos */
+    gap: 30px;
+}
+
+.episode-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.episode-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(94, 34, 108, 0.15); /* Sombra roxa suave */
+}
+
+/* --- Efeito Youtube (Thumbnail vs Video) --- */
+.media-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    background: #000;
+    overflow: hidden;
+}
+
+.episode-thumb {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: opacity 0.4s ease;
+}
+
+.episode-preview {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+    border: none;
+}
+
+/* Classe ativa via JS */
+.episode-card.playing .episode-thumb { opacity: 0; z-index: 0; }
+.episode-card.playing .episode-preview { z-index: 2; }
+
+/* Informações do Card */
+.episode-info {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.episode-tag {
+    color: var(--pipacast-blue);
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.episode-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--pipacast-dark);
+    line-height: 1.4;
+}
+
+.platforms-links {
+    margin-top: auto;
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.platform-btn {
+    font-size: 1.4rem;
+    color: #ccc;
+    transition: 0.3s;
+}
+.platform-btn:hover { transform: scale(1.1); }
+.platform-btn.spotify:hover { color: #1DB954; }
+.platform-btn.youtube:hover { color: #FF0000; }
+
+/* --- Ajustes Footer PipaCast (Cores) --- */
+/* Classes auxiliares para colorir o footer sem mudar o CSS global */
+.footer.pipacast-theme {
+    background: var(--pipacast-dark) !important;
+}
+.footer.pipacast-theme .icon-box {
+    color: var(--pipacast-pink);
+    background: rgba(255,255,255,0.1);
+}
+.footer.pipacast-theme .form-group input:focus, 
+.footer.pipacast-theme .form-group textarea:focus {
+    border-color: var(--pipacast-blue);
+}
+.footer.pipacast-theme .btn-submit {
+    background: var(--pipacast-blue);
+    color: white;
+}
+.footer.pipacast-theme .btn-submit:hover {
+    background: var(--pipacast-pink);
+}
+.footer.pipacast-theme .social-btn:hover {
+    background: var(--pipacast-pink);
+}
+
+/* Ajuste da Logo no Header */
+.logo-pipacast{
+    display: block;
+    position: relative;
+    z-index: 1001;
+    
+    /* RESERVA DE ESPAÇO: 
+       Define um tamanho fixo invisível para o Flexbox 'respeitar' e empurrar o menu.
+       A altura 50px é a mesma da header original. */
+    width: 180px; 
+    height: 50px; 
+}
+
+/* A imagem da logo "desobedece" a caixa e cresce */
+.logo-pipacast img {
+    height: 150px; /* O tamanho fixo grande que você quer */
+    width: auto;   /* Proporcional */
+    
+    position: absolute; /* Sai do fluxo para não esticar o header */
+    top: -45px;    /* Puxa para cima para centralizar visualmente (ajuste se precisar) */
+    left: 0;
+    
+    transition: 0.3s;
+}
+
+/* ==========================================
+   SMOOTH SCROLL GLOBAL - TODAS AS PÁGINAS
+   ========================================== */
+html {
+    scroll-behavior: smooth !important;
+}
+
+/* Offset para compensar header fixo */
+:target {
+    scroll-margin-top: 100px;
+}
+
+/* Smooth para todos os links internos */
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+/* ==========================================
+   NOVOS MÓDULOS VISUAIS (Tag Cloud, Charts, etc)
+   ========================================== */
+
+/* --- 1. NUVEM DE TAGS --- */
+.tags-section { background-color: #f9f9f9; }
+.tags-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tag-item {
+    background: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.tag-item:hover {
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* --- 2. MAPA DE PALAVRAS (Word Cloud) --- */
+.wordmap-section { background-color: white; }
+.wordmap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: radial-gradient(circle, rgba(var(--cor-primaria), 0.05) 0%, rgba(255,255,255,0) 70%);
+}
+
+.word-item {
+    font-weight: 900;
+    line-height: 1;
+    transition: 0.3s;
+    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.word-item:hover { transform: scale(1.1); opacity: 0.8; }
+
+/* Pesos das palavras */
+.w-1 { font-size: 1.2rem; opacity: 0.6; font-weight: 500; }
+.w-2 { font-size: 1.8rem; opacity: 0.7; }
+.w-3 { font-size: 2.5rem; opacity: 0.8; }
+.w-4 { font-size: 3.5rem; opacity: 0.9; }
+.w-5 { font-size: 5rem; opacity: 1; text-transform: uppercase; }
+
+/* --- 3. BARRA SEGMENTADA (Retângulo Dividido) --- */
+.stacked-bar-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stacked-bar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.segmento {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease;
+    position: relative;
+}
+
+.segmento:hover { opacity: 0.9; }
+
+.segmento-valor {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.stacked-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.legenda-dot-item { display: flex; align-items: center; gap: 8px; font-weight: 600; color: #555; }
+.dot { width: 15px; height: 15px; border-radius: 50%; }
+
+/* --- 4. GRÁFICO DE BARRAS HORIZONTAL --- */
+.horizontal-chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bar-label {
+    width: 150px;
+    text-align: right;
+    font-weight: 600;
+    color: #444;
+    flex-shrink: 0;
+}
+
+.bar-track {
+    flex: 1;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bar-value {
+    position: relative;
+    z-index: 2;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #fff; /* Se a barra for curta, pode precisar de ajuste de cor via JS, mas branco funciona na maioria */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    padding-left: 10px;
+}
+
+/* --- 5. GRÁFICO DE COLUNAS VERTICAL --- */
+.column-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    height: 400px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #eee;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.col-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80px;
+    position: relative;
+}
+
+.col-fill {
+    width: 100%;
+    background: linear-gradient(to top, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 10px 10px 0 0;
+    transition: height 1s ease;
+    position: relative;
+}
+
+.col-fill:hover { opacity: 0.9; transform: scaleX(1.05); }
+
+.col-value {
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+}
+
+.col-label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .bar-row { flex-direction: column; align-items: flex-start; gap: 5px; }
+    .bar-label { text-align: left; width: 100%; }
+    .bar-track { width: 100%; }
+    
+    .column-chart-container { gap: 15px; overflow-x: auto; justify-content: flex-start; padding-right: 20px; }
+    .col-item { width: 60px; flex-shrink: 0; }
+    
+    .w-5 { font-size: 3rem; }
+    .w-4 { font-size: 2.5rem; }
+}
+
+/* Utilitários */
+.text-center { text-align: center; }
+.mb-40 { margin-bottom: 40px; }
+
+@media (max-width: 768px) {
+    .bar-row { flex-direction: column; align-items: flex-start; gap: 5px; }
+    .bar-label { text-align: left; width: 100%; }
+    .bar-track { width: 100%; }
+    
+    .column-chart-container { gap: 15px; overflow-x: auto; justify-content: flex-start; padding-right: 20px; }
+    .col-item { width: 60px; flex-shrink: 0; }
+    
+    .w-5 { font-size: 3rem; }
+    .w-4 { font-size: 2.5rem; }
+}
+
+/* ==========================================
+   ESTILOS ADICIONAIS (V3)
+   ========================================== */
+
+/* --- Texto Narrativo (Estilo Editorial) --- */
+.texto-narrativo-section {
+    padding: 40px 0;
+    background: white;
+}
+
+.texto-corpo {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px; /* Largura de leitura ideal */
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.texto-corpo strong {
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+/* --- Texto em Caixa (Box Destaque) --- */
+.texto-caixa-section {
+    padding: 40px 0;
+}
+
+.texto-caixa {
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.caixa-titulo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.caixa-corpo {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* --- Gráfico de Linha (SVG) --- */
+.chart-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto; /* Rolagem em mobile */
+}
+
+.line-chart {
+    width: 100%;
+    min-width: 600px; /* Garante tamanho mínimo */
+    height: auto;
+}
+
+.line-chart path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: drawLine 2s ease forwards;
+}
+
+@keyframes drawLine {
+    to { stroke-dashoffset: 0; }
+}
+
+/* --- Gráfico de Barras Horizontais (Estendido) --- */
+/* Sobrescreve o anterior para ser mais largo/completo */
+.horizontal-chart-container.wide {
+    max-width: 1000px; /* Mais largo */
+}
+
+.horizontal-chart-container.wide .bar-row {
+    flex-direction: column; /* Label em cima da barra */
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.horizontal-chart-container.wide .bar-label-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #444;
+}
+
+.horizontal-chart-container.wide .bar-track-wide {
+    width: 100%;
+    height: 25px;
+    background: #f0f0f0;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.horizontal-chart-container.wide .bar-fill {
+    border-radius: 50px; /* Arredondado */
+}
+
+/* --- Ajustes Finais de Amostra --- */
+.distribuicao-item.simples {
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}

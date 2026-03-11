@@ -1,0 +1,407 @@
+{
+  "id": "dia-das-maes-2025",
+  "template": "magazine",
+  "cores": { 
+    "primaria": "#f84600", 
+    "secundaria": "#df8615", 
+    "acento": "#7a8370" 
+  },
+  
+  "hero": {
+    "imagem": "https://images.unsplash.com/photo-1542385151-efd9000785a0?q=80&w=689&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "categoria": "Comportamento",
+    "titulo": "Dia das Mães 2025",
+    "subtitulo": "A queda histórica na intenção de comemorar e o que realmente importa para os soteropolitanos",
+    "data": "Março 2025",
+    "autor": "Pipa Pesquisas"
+  },
+  
+  "contexto": {
+    "titulo": "O Cenário em 2025",
+    "texto": "Apontada como a segunda data comercial mais importante no Brasil, o Dia das Mães enfrenta seu momento mais desafiador desde 2022. Nossa pesquisa revela que apenas 36% dos soteropolitanos pretendem comemorar a data em 2025 — uma queda histórica de 35% em relação ao ano anterior. O que está por trás dessa mudança radical no comportamento do consumidor baiano?"
+  },
+  
+  "metodologia": {
+    "resumo": "Pesquisa Quantitativa aplicada em campo presencial com 1.629 respondentes",
+    "itens": [
+      { "icone": "fas fa-users", "texto": "1.629 entrevistados em Salvador e Região Metropolitana" },
+      { "icone": "fas fa-calendar-alt", "texto": "Realizada em março de 2025" },
+      { "icone": "fas fa-chart-line", "texto": "Margem de erro: 2,4 pontos percentuais" },
+      { "icone": "fas fa-percentage", "texto": "Nível de confiança: 95%" }
+    ]
+  },
+  
+  "amostra": {
+    "total": 1629,
+    "distribuicao": {
+      "gênero": { 
+        "Feminino": "64%", 
+        "Masculino": "35%", 
+        "Outros": "1%" 
+      },
+      "idade": [
+        { "faixa": "18-24 anos", "percentual": 10 },
+        { "faixa": "25-34 anos", "percentual": 42 },
+        { "faixa": "35-49 anos", "percentual": 30 },
+        { "faixa": "50-59 anos", "percentual": 9 },
+        { "faixa": "60+ anos", "percentual": 8 }
+      ],
+      "raça": [
+        { "label": "Pardo", "percentual": 53 },
+        { "label": "Branco", "percentual": 22 },
+        { "label": "Preto", "percentual": 21 },
+        { "label": "Indígena", "percentual": 3 }
+      ],
+      "classe_social": [
+        { "classe": "AB1", "percentual": 11 },
+        { "classe": "B2C1", "percentual": 68 },
+        { "classe": "C2DE", "percentual": 20 }
+      ],
+      "ocupação": [
+        { "tipo": "Empregado CLT", "percentual": 61 },
+        { "tipo": "Aposentado", "percentual": 10 },
+        { "tipo": "Autônomo", "percentual": 8 },
+        { "tipo": "Outros", "percentual": 21 }
+      ]
+    }
+  },
+  
+  "blocos": [
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-exclamation-triangle",
+      "texto": "Apenas 36% pretendem comemorar em 2025",
+      "subtexto": "Queda de 35% vs 2024 — a menor intenção desde 2022"
+    },
+    
+    {
+      "tipo": "grafico_linha",
+      "titulo": "Evolução da Intenção de Comemorar (2022-2025)",
+      "dados": [
+        { "label": "2022", "valor": 88 },
+        { "label": "2023", "valor": 61 },
+        { "label": "2024", "valor": 71 },
+        { "label": "2025", "valor": 36 }
+      ],
+      "texto_lado": "Após uma recuperação em 2024 (71%), a intenção de comemorar despencou para apenas 36% em 2025 — **o pior resultado da série histórica**. A queda de 35 pontos percentuais em um ano indica uma mudança profunda no comportamento do consumidor, provavelmente ligada às **pressões econômicas crescentes** e à reavaliação de prioridades de gasto.",
+      "posicao_texto": "direita"
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A pesquisa revela uma transformação fundamental: o Dia das Mães deixou de ser uma data 'obrigatória' para se tornar opcional. Pela primeira vez, a maioria dos soteropolitanos (64%) decidiu **não celebrar** comercialmente a data. Isso não significa falta de amor ou respeito — mas sim uma **redefinição do que significa homenagear**."
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "53% dos respondentes vão preparar uma refeição especial em casa, tornando a comida o principal elemento de celebração — mais importante que presentes físicos."
+    },
+    
+    {
+      "tipo": "grid_insights",
+      "titulo": "Como Pretendem Comemorar",
+      "cards": [
+        {
+          "numero": "53%",
+          "texto": "Vão preparar refeição especial",
+          "icone": "fas fa-utensils"
+        },
+        {
+          "numero": "35%",
+          "texto": "Irão a restaurante",
+          "icone": "fas fa-store"
+        },
+        {
+          "numero": "28%",
+          "texto": "Vão reunir a família",
+          "icone": "fas fa-users"
+        },
+        {
+          "numero": "27%",
+          "texto": "Pretendem presentear",
+          "icone": "fas fa-gift"
+        }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A comida emerge como o **novo presente**. Em 2024, apenas 27% escolhiam refeição como forma de celebração. Em 2025, esse número saltou para 53% — um crescimento de 26 pontos percentuais. A explicação é clara: uma refeição especial **custa menos** que presentes tradicionais, mas mantém o **valor simbólico** do encontro familiar."
+    },
+    
+    {
+      "tipo": "layout_imagem_texto",
+      "imagem": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop",
+      "titulo": "A Revolução da Mesa",
+      "texto": "Restaurantes registraram aumento de 16% nas reservas comparado a 2024. Ir a um restaurante se tornou a segunda forma mais popular de celebração (35%), superando inclusive a compra de presentes. O que antes era visto como 'gastar fora' agora é valorizado como experiência compartilhada.",
+      "posicao_imagem": "esquerda"
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-heart",
+      "texto": "65% vão presentear apenas a mãe",
+      "subtexto": "Foco no essencial: economia concentrada em uma pessoa"
+    },
+    
+    {
+      "tipo": "grafico_barras_horizontal",
+      "titulo": "Quem Será Presenteada",
+      "dados": [
+        { "label": "Mãe", "valor": 65 },
+        { "label": "Irmã", "valor": 29 },
+        { "label": "Esposa/namorada", "valor": 18 },
+        { "label": "Sogra", "valor": 8 },
+        { "label": "Filha/enteada", "valor": 5 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A estratégia de **concentração** ficou evidente: 65% dos que vão presentear escolherão **apenas uma pessoa** — a mãe. Em anos anteriores, era comum presentear mãe, sogra, esposa e irmãs simultaneamente. Agora, o orçamento limitado força uma escolha, e a mãe biológica tem prioridade absoluta."
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "69% consideram principalmente as dicas da pessoa sobre o que ela quer — ouvir virou estratégia de economia, evitando compras erradas."
+    },
+    
+    {
+      "tipo": "texto_duas_colunas",
+      "texto1": "**Como decidem o presente:** A pesquisa mostra uma mudança de mentalidade. Em vez de 'surpreender' com algo inesperado (arriscado e potencialmente desperdiçado), 69% agora **perguntam diretamente** o que a mãe deseja. Isso reduz erros, devoluções e desperdício financeiro.",
+      "texto2": "**Influência externa:** Apenas 40% consideram recomendações de amigos/familiares, 19% prestam atenção em comerciais de TV, e meros 5% são impactados por publicidade online. O **boca a boca diminuiu**, a TV perdeu força, e as redes sociais ainda não conquistaram esse público."
+    },
+    
+    {
+      "tipo": "grid_insights",
+      "titulo": "O Que Pretendem Dar de Presente",
+      "cards": [
+        {
+          "numero": "45%",
+          "texto": "Perfumes",
+          "icone": "fas fa-spray-can"
+        },
+        {
+          "numero": "31%",
+          "texto": "Roupas",
+          "icone": "fas fa-tshirt"
+        },
+        {
+          "numero": "16%",
+          "texto": "Flores",
+          "icone": "fas fa-seedling"
+        },
+        {
+          "numero": "13%",
+          "texto": "Calçados",
+          "icone": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "Perfumes lideram absolutos com 45% — um **produto seguro**, desejado, e com ampla faixa de preço. Roupas (31%) vêm em segundo, mostrando preferência por itens **práticos e utilizáveis**. Flores, tradicionalmente simbólicas, aparecem com apenas 16%, indicando que o **pragmatismo venceu o romantismo**."
+    },
+    
+    {
+      "tipo": "layout_imagem_texto",
+      "imagem": "https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?q=80&w=1200&auto=format&fit=crop",
+      "titulo": "A Queda dos Presentes Experienciais",
+      "texto": "Refeição especial fora de casa caiu de 44% (2024) para 35% (2025) como opção de presente. Viagens e experiências premium praticamente desapareceram da lista. O orçamento apertado força escolha entre experiência OU presente físico — raramente ambos.",
+      "posicao_imagem": "direita"
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-dollar-sign",
+      "texto": "Ticket médio planejado: entre R$ 100 e R$ 200",
+      "subtexto": "39% pretendem gastar essa faixa — o maior percentual"
+    },
+    
+    {
+      "tipo": "barra_segmentada",
+      "titulo": "Distribuição do Orçamento Planejado",
+      "dados": [
+        { "label": "R$ 100-200", "valor": 39, "cor": "#ff0a72" },
+        { "label": "R$ 50-100", "valor": 31, "cor": "#8938f2" },
+        { "label": "Acima R$ 300", "valor": 16, "cor": "#d262ae" },
+        { "label": "R$ 200-300", "valor": 13, "cor": "#F75E12" },
+        { "label": "Até R$ 50", "valor": 2, "cor": "#468FFB" }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A faixa de **R$ 100-200** concentra 39% das intenções, seguida de **R$ 50-100** com 31%. Juntas, essas duas faixas mais baixas representam **70% dos compradores**. O extremo oposto — gastos acima de R$ 300 — caiu para apenas 16%, um terço do que era em 2022 (48%)."
+    },
+    
+    {
+      "tipo": "colunas",
+      "itens": [
+        {
+          "tipo": "texto_destaque_caixa",
+          "texto": "**67%** pretendem manter o mesmo valor de 2024",
+          "cor_fundo": "#f9e6f2"
+        },
+        {
+          "tipo": "texto_destaque_caixa",
+          "texto": "**19%** pretendem aumentar o valor gasto",
+          "cor_fundo": "#e6f0f9"
+        },
+        {
+          "tipo": "texto_destaque_caixa",
+          "texto": "**14%** vão diminuir o valor em relação a 2024",
+          "cor_fundo": "#f9f0e6"
+        }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A **manutenção do orçamento** (67%) indica estabilidade forçada — não há folga para gastar mais, mas também não houve piora drástica que obrigue a gastar menos. Os 19% que pretendem aumentar são **classes AB**, enquanto os 14% que vão reduzir são majoritariamente **C2DE**."
+    },
+    
+    {
+      "tipo": "grafico_barras_horizontal",
+      "titulo": "Formas de Pagamento Preferidas",
+      "dados": [
+        { "label": "Cartão de crédito próprio", "valor": 65 },
+        { "label": "PIX", "valor": 20 },
+        { "label": "Cartão de débito", "valor": 9 },
+        { "label": "Cartão de terceiros", "valor": 9 },
+        { "label": "Dinheiro", "valor": 9 },
+        { "label": "Boleto", "valor": 1 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "O **cartão de crédito próprio** domina com 65%, mostrando dependência do parcelamento para viabilizar a compra. PIX aparece em segundo (20%), indicando que uma parcela consegue pagar à vista. Dinheiro físico caiu para apenas 9% — o Brasil está cada vez mais digital."
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "67% vão comprar na semana do Dia das Mães ou nos 15 dias anteriores — procrastinação ou espera por promoções de última hora?"
+    },
+    
+    {
+      "tipo": "timeline",
+      "titulo": "Quando Pretendem Comprar",
+      "items": [
+        {
+          "data": "Mais de 1 mês antes",
+          "titulo": "Planejadores (2%)",
+          "texto": "Minoria que se antecipa para garantir melhores preços"
+        },
+        {
+          "data": "1 mês antes",
+          "titulo": "Organizados (12%)",
+          "texto": "Compram com antecedência para evitar correria"
+        },
+        {
+          "data": "15 dias antes",
+          "titulo": " Equilibrados (33%)",
+          "texto": "Maior concentração — equilíbrio entre antecedência e pressa"
+        },
+        {
+          "data": "Na semana",
+          "titulo": "Apressados (34%)",
+          "texto": "Deixam para última semana, arriscam falta de estoque"
+        },
+        {
+          "data": "1 dia antes / no dia",
+          "titulo": "Desesperados (19%)",
+          "texto": "Pagam mais caro, aceitam o que encontram"
+        }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A concentração nas **duas semanas finais** (67% somando 'semana' e '15 dias antes') revela comportamento de **espera por promoções** misturado com **procrastinação clássica**. Apenas 14% compram com mais de um mês de antecedência — planejamento virou artigo de luxo."
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-store",
+      "texto": "68% vão comprar em lojas físicas de grandes marcas",
+      "subtexto": "O varejo tradicional mantém liderança absoluta"
+    },
+    
+    {
+      "tipo": "grafico_colunas",
+      "titulo": "Canais de Compra Preferidos",
+      "dados": [
+        { "label": "Loja física", "valor": 68 },
+        { "label": "Loja de bairro", "valor": 31 },
+        { "label": "E-commerce multimarcas", "valor": 21 },
+        { "label": "Revendedores", "valor": 7 },
+        { "label": "Delivery", "valor": 2 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "As **lojas físicas das grandes marcas** dominam com 68%, seguidas pelo comércio local de bairro (31%). O e-commerce, apesar do crescimento em outras categorias, fica em terceiro com apenas 21%. Para presentes pessoais e emocionais, o soteropolitano ainda prefere **ver, tocar e escolher pessoalmente**."
+    },
+    
+    {
+      "tipo": "layout_imagem_texto",
+      "imagem": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1200&auto=format&fit=crop",
+      "titulo": "O Comércio de Bairro Resiste",
+      "texto": "31% escolhem lojas de comércio local/de bairro, um número surpreendentemente alto. Isso indica valorização da proximidade, do atendimento personalizado, e da possibilidade de negociar preços e prazos diretamente com o dono — algo impossível em grandes redes.",
+      "posicao_imagem": "esquerda"
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "Cartões-presente vendidos aumentaram 22% em 2024 — a flexibilidade é o novo luxo, e essa tendência deve continuar em 2025."
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "O **vale-presente** ganhou força brutal: crescimento de 5 pontos percentuais em um ano. A razão é simples: elimina o risco de errar o presente, permite que a mãe escolha o que realmente quer, e mantém o valor emocional do gesto. É a **terceirização bem-sucedida da escolha**."
+    },
+    
+    {
+      "tipo": "comparacao",
+      "titulo": "Perfis de Compradores por Classe",
+      "items": [
+        {
+          "titulo": "Classe AB",
+          "numero": "R$ 280",
+          "descricao": "Ticket médio alto, preferência por experiências e marcas premium"
+        },
+        {
+          "titulo": "Classe C",
+          "numero": "R$ 140",
+          "descricao": "Equilíbrio entre pragmatismo e simbólico, foco em perfumes e roupas"
+        },
+        {
+          "titulo": "Classe DE",
+          "numero": "R$ 75",
+          "descricao": "Orçamento apertado, presentes simples com valor afetivo"
+        }
+      ]
+    },
+    
+    {
+      "tipo": "citacao",
+      "texto": "Esse ano não vou conseguir dar presente. Mas vou fazer aquela comida que minha mãe adora, reunir a família, tirar foto. Isso vale mais.",
+      "autor": "Participante da pesquisa, 29 anos, Classe C"
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A frase acima captura perfeitamente o **novo espírito do Dia das Mães 2025**: menos consumo, mais afeto. Menos shopping, mais casa. Menos compra por obrigação, mais celebração por escolha. A crise econômica forçou uma **reavaliação de prioridades**, e o resultado pode ser, paradoxalmente, mais **autêntico** do que as festas dos anos de bonança."
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-chart-line",
+      "texto": "Expectativa de queda de 8% no faturamento do varejo",
+      "subtexto": "Em comparação com 2024 — primeiro declínio desde 2020"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "carnaval-2024-legado",
+  "template": "magazine",
+  
+  "cores": {
+    "primaria": "#ff0a72",
+    "secundaria": "#F75E12",
+    "acento": "#8938f2"
+  },
+  
+  "hero": {
+    "imagem": "https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?q=80&w=2000&auto=format&fit=crop",
+    "categoria": "Consumo",
+    "titulo": "Carnaval 2024: O Legado da Folia",
+    "subtitulo": "O que ficou na memória e no bolso após a maior festa do planeta",
+    "data": "Março 2024",
+    "autor": "Pipa Pesquisas"
+  },
+  
+  "contexto": {
+    "titulo": "Por que fizemos esta pesquisa?",
+    "texto": "Após o Carnaval 2024, queríamos entender não apenas os números, mas as emoções, as marcas que ficaram gravadas na memória dos foliões e como a festa impactou economicamente as famílias baianas. Esta pesquisa mergulha fundo no legado deixado pela maior festa popular do Brasil."
+  },
+  
+  "metodologia": {
+    "resumo": "Realizamos entrevistas presenciais e online entre os dias 15 e 25 de março de 2024, logo após o término dos festejos.",
+    "itens": [
+      {
+        "icone": "fas fa-users",
+        "texto": "500 entrevistados de Salvador e RMS"
+      },
+      {
+        "icone": "fas fa-calendar-alt",
+        "texto": "Período: 15 a 25 de março de 2024"
+      },
+      {
+        "icone": "fas fa-chart-line",
+        "texto": "Margem de erro: 4,4 pontos percentuais"
+      },
+      {
+        "icone": "fas fa-percentage",
+        "texto": "Nível de confiança: 95%"
+      }
+    ]
+  },
+  
+  "amostra": {
+    "total": 500,
+    "distribuicao": {
+      "genero": {
+        "feminino": "52%",
+        "masculino": "48%"
+      },
+      "idade": [
+        { "faixa": "18-24", "percentual": 22 },
+        { "faixa": "25-34", "percentual": 35 },
+        { "faixa": "35-44", "percentual": 25 },
+        { "faixa": "45-59", "percentual": 12 },
+        { "faixa": "60+", "percentual": 6 }
+      ],
+      "classe": [
+        { "classe": "A/B", "percentual": 28 },
+        { "classe": "C", "percentual": 52 },
+        { "classe": "D/E", "percentual": 20 }
+      ]
+    }
+  },
+  
+  "blocos": [
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-heart",
+      "texto": "85% dos foliões avaliam o Carnaval 2024 como o melhor dos últimos 5 anos",
+      "subtexto": "A volta do público às ruas foi marcante"
+    },
+    
+    {
+      "tipo": "grid_insights",
+      "titulo": "Principais Descobertas",
+      "subtitulo": "Os números que contam a história do Carnaval 2024",
+      "cards": [
+        {
+          "numero": "R$ 1.247",
+          "texto": "Gasto médio por pessoa durante os 5 dias de festa",
+          "icone": "fas fa-money-bill-wave"
+        },
+        {
+          "numero": "68%",
+          "texto": "Compraram abadá ou ingresso para camarote",
+          "icone": "fas fa-ticket-alt"
+        },
+        {
+          "numero": "3,2 dias",
+          "texto": "Média de dias curtindo a folia nas ruas",
+          "icone": "fas fa-calendar-day"
+        },
+        {
+          "numero": "92%",
+          "texto": "Pretendem voltar para o Carnaval 2025",
+          "icone": "fas fa-star"
+        }
+      ]
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "texto": "Skol foi a marca mais lembrada pelos foliões, seguida por Brahma e Itaipava",
+      "subtexto": "Top of Mind - Cervejas"
+    },
+    
+    {
+      "tipo": "grid_insights",
+      "titulo": "Onde Gastaram",
+      "cards": [
+        {
+          "numero": "42%",
+          "texto": "Do orçamento foi para bebidas",
+          "icone": "fas fa-beer"
+        },
+        {
+          "numero": "28%",
+          "texto": "Gastaram com alimentação",
+          "icone": "fas fa-utensils"
+        },
+        {
+          "numero": "18%",
+          "texto": "Investiram em fantasias",
+          "icone": "fas fa-mask"
+        },
+        {
+          "numero": "12%",
+          "texto": "Outros gastos (transporte, acessórios)",
+          "icone": "fas fa-shopping-bag"
+        }
+      ]
+    }
+  ]
+}

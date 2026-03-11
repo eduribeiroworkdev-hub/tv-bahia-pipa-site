@@ -1,0 +1,282 @@
+{
+  "id": "setor-imobiliario-2025",
+  "template": "magazine",
+  "cores": {
+    "primaria": "#6B9F7F",
+    "secundaria": "#3D5A47", 
+    "acento": "#9AC484"
+  },
+  
+  "hero": {
+    "imagem": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop",
+    "categoria": "Consumo",
+    "titulo": "Setor Imobiliário 2025",
+    "subtitulo": "Intenção de compra e o sonho da casa própria entre os baianos",
+    "data": "Setembro 2025",
+    "autor": "Pipa Pesquisas"
+  },
+  
+  "contexto": {
+    "titulo": "O Cenário em 2025",
+    "texto": "A capital baiana se consolidou como uma das principais cidades de investimento no mercado imobiliário. Segundo o índice FipeZAP, Salvador foi a segunda capital brasileira com maior valorização de imóveis em 2024, com preços aumentando 16,38% em comparação ao ano anterior, ficando atrás apenas de Curitiba (18%). O mercado apresentou valorização média de 12,7% entre abril de 2024 e abril de 2025, conforme Ademi-BA. Em julho de 2025, as vendas mostraram bom desempenho, passando de 460 unidades em junho para 483 em julho."
+  },
+  
+  "metodologia": {
+    "resumo": "Pesquisa Quantitativa aplicada em campo presencial em setembro de 2025",
+    "itens": [
+      { "icone": "fas fa-users", "texto": "253 entrevistados em Salvador e Região Metropolitana" },
+      { "icone": "fas fa-calendar-alt", "texto": "Realizada em setembro de 2025" },
+      { "icone": "fas fa-chart-line", "texto": "Margem de erro não especificada" },
+      { "icone": "fas fa-percentage", "texto": "Público: Classes AB (60%) e C (40%)" }
+    ]
+  },
+  
+  "amostra": {
+    "total": 253,
+    "distribuicao": {
+      "genero": {
+        "Feminino": "49%",
+        "Masculino": "51%"
+      },
+      "idade": [
+        { "faixa": "18-24 anos", "percentual": 1 },
+        { "faixa": "25-34 anos", "percentual": 6 },
+        { "faixa": "35-49 anos", "percentual": 26 },
+        { "faixa": "50-59 anos", "percentual": 25 },
+        { "faixa": "60+ anos", "percentual": 42 }
+      ],
+      "classe_social": [
+        { "classe": "AB", "percentual": 60 },
+        { "classe": "C", "percentual": 40 }
+      ]
+    }
+  },
+  
+  "blocos": [
+    {
+      "tipo": "texto_puro",
+      "texto": "O segmento de **alto padrão (luxo)** ganhou força, saltando de 1,4% para **7% dos lançamentos** e de 1% para **6% das vendas**, impulsionado por demanda por imóveis exclusivos, seguros e com alto potencial de valorização. Em paralelo, o **Minha Casa Minha Vida** liderou os lançamentos com **39%**, seguido dos imóveis compactos (33%), mostrando diversidade na oferta."
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "Bairros mais vendidos em julho/2025: Pituba (27,9%), Armação (10,5%), Piatã (10,5%)"
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-home",
+      "texto": "O lar é um refúgio que a maioria divide com a família",
+      "subtexto": "34% vivem com 2 pessoas, 30% com 4 ou mais, 25% com 3 pessoas, e apenas 11% moram sozinhos"
+    },
+    
+    {
+      "tipo": "grafico_colunas",
+      "titulo": "Quantas Pessoas Moram na Residência",
+      "dados": [
+        { "label": "Sozinho", "valor": 11 },
+        { "label": "2 pessoas", "valor": 34 },
+        { "label": "3 pessoas", "valor": 25 },
+        { "label": "4+ pessoas", "valor": 30 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_com_destaque_lateral",
+      "titulo": "A maioria dos baianos já realizou o sonho da casa própria",
+      "texto_principal": "68% são donos do seu próprio imóvel, e destes, impressionantes 86% já estão com o imóvel quitado. Isso demonstra estabilidade e segurança financeira entre os respondentes da pesquisa.",
+      "destaques": [
+        { "numero": "68%", "texto": "São donos do seu próprio imóvel", "cor": "#6B9F7F" },
+        { "numero": "86%", "texto": "Já estão com seu imóvel quitado", "cor": "#3D5A47" }
+      ]
+    },
+    
+    {
+      "tipo": "lista_com_barras",
+      "titulo": "O que tem na casa dos baianos?",
+      "dados": [
+        { "item": "Minha casa tem quarto", "concordam": 99, "discordam": 1 },
+        { "item": "Minha casa tem banheiro", "concordam": 99, "discordam": 1 },
+        { "item": "Minha casa tem cozinha", "concordam": 98, "discordam": 2 },
+        { "item": "Minha casa é meu lugar favorito", "concordam": 96, "discordam": 4 },
+        { "item": "Minha casa tem área de serviço", "concordam": 85, "discordam": 15 },
+        { "item": "Minha casa tem sala de estar", "concordam": 80, "discordam": 20 },
+        { "item": "Um dos meus sonhos é ter uma casa própria", "concordam": 80, "discordam": 20 },
+        { "item": "Minha casa é onde passo a maior parte do meu tempo", "concordam": 78, "discordam": 22 },
+        { "item": "Minha casa tem varanda", "concordam": 69, "discordam": 31 },
+        { "item": "Minha casa tem garagem", "concordam": 69, "discordam": 31 },
+        { "item": "Minha casa tem suíte", "concordam": 59, "discordam": 41 },
+        { "item": "Moro em casa", "concordam": 59, "discordam": 41 },
+        { "item": "Moro em apartamento", "concordam": 52, "discordam": 48 },
+        { "item": "Minha casa tem quintal ou área externa", "concordam": 52, "discordam": 48 },
+        { "item": "Minha casa tem escritório", "concordam": 30, "discordam": 70 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "Ter uma casa própria, uma profissão e estabilidade financeira são coisas **muito mais importantes** do que casar e ter filhos. Esta é a nova ordem de prioridades dos baianos entrevistados."
+    },
+    
+    {
+      "tipo": "grafico_barras_empilhadas",
+      "titulo": "O que é mais importante na vida?",
+      "legenda": ["Detratores", "Neutros", "Promotores"],
+      "cores": ["#2C4A38", "#5A7A66", "#9AC484"],
+      "dados": [
+        { "item": "Ter casa própria", "valores": [3, 6, 92] },
+        { "item": "Ter uma profissão", "valores": [3, 2, 96] },
+        { "item": "Ter estabilidade financeira", "valores": [4, 3, 94] },
+        { "item": "Ter uma família", "valores": [7, 4, 89] },
+        { "item": "Ter plano de saúde", "valores": [9, 5, 86] },
+        { "item": "Ter uma religião", "valores": [23, 12, 66] },
+        { "item": "Ter um negócio próprio", "valores": [32, 21, 47] },
+        { "item": "Ter um carro", "valores": [21, 20, 59] },
+        { "item": "Ter filhos", "valores": [32, 6, 62] },
+        { "item": "Casar", "valores": [47, 11, 42] }
+      ]
+    },
+    
+    {
+      "tipo": "layout_imagem_texto",
+      "imagem": "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1200&auto=format&fit=crop",
+      "titulo": "Mesmo amando a casa, a busca por algo novo está no horizonte",
+      "texto": "A satisfação com o imóvel é alta, com média de **9 em uma escala de 0 a 10**. No entanto, **5 a cada 10** entrevistados se mudariam do bairro e **49%** consideram mudar de imóvel nos próximos dois anos.",
+      "posicao_imagem": "direita"
+    },
+    
+    {
+      "tipo": "grid_cards",
+      "titulo": "Principais Motivos para Mudança de Imóvel",
+      "cards": [
+        { "numero": "45%", "texto": "Projetos pessoais", "cor": "#3D5A47" },
+        { "numero": "20%", "texto": "Desejo de mudança (bairro/cidade)", "cor": "#3D5A47" },
+        { "numero": "19%", "texto": "Características do imóvel", "cor": "#3D5A47" },
+        { "numero": "7%", "texto": "Má localização / Não gosto do bairro", "cor": "#3D5A47" },
+        { "numero": "6%", "texto": "Preço alto", "cor": "#3D5A47" },
+        { "numero": "5%", "texto": "Final de contrato / Casa à venda", "cor": "#3D5A47" },
+        { "numero": "29%", "texto": "Outros motivos", "cor": "#9AC484" }
+      ]
+    },
+    
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-key",
+      "texto": "36% pretendem comprar um imóvel nos próximos dois anos",
+      "subtexto": "Enquanto apenas 6% pretendem alugar. Ainda assim, 4 a cada 10 estão indecisos"
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A compra do imóvel continua sendo a **principal meta para o futuro**, superando amplamente o aluguel. O desejo se transforma em planejamento: **5 a cada 10 entrevistados** já se preparam financeiramente para a realização da compra."
+    },
+    
+    {
+      "tipo": "comparacao",
+      "titulo": "Preferência: Novo vs Usado",
+      "items": [
+        { "titulo": "Imóvel Novo", "numero": "45%", "descricao": "Preferem comprar imóveis novos, direto da construtora" },
+        { "titulo": "Imóvel Usado", "numero": "55%", "descricao": "Garantem a preferência - mais acessíveis e em bairros consolidados" }
+      ]
+    },
+    
+    {
+      "tipo": "grafico_barras_horizontal",
+      "titulo": "Construtoras Mais Consideradas para Compra",
+      "dados": [
+        { "label": "MRV", "valor": 33 },
+        { "label": "Tenda", "valor": 22 },
+        { "label": "Moura Dubeux", "valor": 21 },
+        { "label": "Costa Andrade Construtora", "valor": 13 },
+        { "label": "BRF Construtora", "valor": 8 },
+        { "label": "Santa Helena Construtora", "valor": 8 },
+        { "label": "Stanza", "valor": 5 },
+        { "label": "Outros", "valor": 52 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "**Financiamento é a porta de entrada** para a compra do imóvel: 48% planejam financiar, 19% pagar à vista, 10% fazer consórcio, e apenas 1% pedir ajuda financeira aos familiares."
+    },
+    
+    {
+      "tipo": "grafico_colunas",
+      "titulo": "Orçamento Disponível para Compra",
+      "dados": [
+        { "label": "Até R$ 50 mil", "valor": 7 },
+        { "label": "R$ 50-100 mil", "valor": 21 },
+        { "label": "R$ 100-300 mil", "valor": 34 },
+        { "label": "R$ 300-500 mil", "valor": 21 },
+        { "label": "R$ 500-700 mil", "valor": 12 },
+        { "label": "Acima R$ 700 mil", "valor": 5 }
+      ]
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "Para a maioria dos baianos, o sonho da casa própria cabe em um orçamento de até R$ 300 mil (62% somando as três primeiras faixas)"
+    },
+    
+    {
+      "tipo": "grafico_colunas",
+      "titulo": "Valor da Parcela Mensal Desejada",
+      "dados": [
+        { "label": "Até R$ 1.000", "valor": 40 },
+        { "label": "R$ 1.000-2.000", "valor": 36 },
+        { "label": "R$ 2.000-3.000", "valor": 21 },
+        { "label": "R$ 3.000-4.000", "valor": 2 },
+        { "label": "Acima R$ 4.000", "valor": 2 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "O custo da parcela é **prioridade absoluta**: 40% dos futuros compradores buscam mensalidades de até R$ 1.000, e 76% querem pagar no máximo R$ 2.000 mensais."
+    },
+    
+    {
+      "tipo": "grafico_barras_horizontal",
+      "titulo": "Por Que Comprar um Imóvel?",
+      "dados": [
+        { "label": "É um sonho antigo", "valor": 24 },
+        { "label": "Investimento", "valor": 20 },
+        { "label": "Sair do aluguel", "valor": 18 },
+        { "label": "Mudança de cidade/bairro", "valor": 18 },
+        { "label": "Trocar por um imóvel maior", "valor": 16 },
+        { "label": "Trocar por um imóvel menor", "valor": 10 },
+        { "label": "Aproveitar oportunidade de mercado", "valor": 9 },
+        { "label": "Outros", "valor": 14 }
+      ]
+    },
+    
+    {
+      "tipo": "texto_puro",
+      "texto": "A compra do imóvel é guiada pela **segurança de sair do aluguel** (18%) e a **realização de um sonho antigo** (24%). Investimento aparece em segundo lugar (20%), mostrando que os baianos veem o imóvel tanto como lar quanto como ativo financeiro."
+    },
+    
+    {
+      "tipo": "grafico_barras_horizontal",
+      "titulo": "Por Que NÃO Comprar? Obstáculos dos Que Pretendem Alugar",
+      "dados": [
+        { "label": "Falta de dinheiro/recursos financeiros", "valor": 53 },
+        { "label": "Renda insuficiente para financiar", "valor": 33 },
+        { "label": "Juros altos/condições desfavoráveis", "valor": 20 },
+        { "label": "Instabilidade econômica no país", "valor": 13 },
+        { "label": "Preferência por continuar no aluguel", "valor": 13 },
+        { "label": "Outros", "valor": 13 }
+      ]
+    },
+    
+    {
+      "tipo": "caixa_destaque",
+      "texto": "Depósito caução é a forma mais utilizada para garantir o aluguel (53%), seguido por fiador (13%) e seguro (13%)"
+    },
+    
+    {
+      "tipo": "citacao",
+      "texto": "A valorização de 12,7% no último ano coloca Salvador como um dos mercados mais promissores do Brasil. O sonho da casa própria nunca esteve tão próximo para tantos baianos.",
+      "autor": "Análise Pipa Pesquisas"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipaCast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        // Inicializa com sua Chave Pública (pegue no painel do EmailJS)
+        emailjs.init("qRVFamsAaql-9cLib");
+    })();
+    </script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-pipacast">
+                    <img id="logo-pipa" src="assets/images/Logo.png" alt="PipaCast" class="logo-pipacast">
+                </a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active-pipacast">Home</a></li>
+                    <li><a href="#episodios" class="nav-link active-pipacast">Episódios</a></li>
+                    <li><a href="#contato" class="nav-link active-pipacast btn-nav-contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="vignette-section">
+        <video class="vignette-video" autoplay muted loop playsinline>
+            <source src="assets/videos/PIPACAST%20%2300.mp4" type="video/mp4">
+            <div style="width:100%; height:100%; background: var(--pipacast-dark);"></div>
+        </video>
+        
+        <div class="vignette-content">
+            <h1 style="font-size: 4rem; font-weight: 900; margin-bottom: 10px; text-shadow: 0 5px 15px rgba(0,0,0,0.5);">PIPACAST</h1>
+            <p style="font-size: 1.5rem; font-weight: 500;">Dados, cultura e o jeito baiano de ser.</p>
+        </div>
+    </section>
+
+    <section class="episodes-section" id="episodios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="color: var(--pipacast-dark);">Nossos Episódios</h2>
+            </div>
+
+            <div class="episodes-grid">
+                
+                <article class="episode-card" data-video="https://youtu.be/y8bF592e0Xo?si=EnoKsQnXNvWDnaWK">
+                    <div class="media-wrapper">
+                        <img src="assets/images/CAPA PIPACAST 06.jpg" alt="Episódio 06" class="episode-thumb">
+                        <div class="episode-preview-container"></div> 
+                    </div>
+                    <div class="episode-info">
+                        <span class="episode-tag">Episódio #06</span>
+                        <h3 class="episode-title">Sertanejo: A força do ritmo no interior e na capital</h3>
+                        <div class="platforms-links">
+                            <a href="https://open.spotify.com/episode/0P9WbgWYwZ94iCtH9gaHWH?si=fefe57c333bb462b" target="_blank" class="platform-btn spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="https://youtu.be/y8bF592e0Xo" target="_blank" class="platform-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="episode-card" data-video="https://youtu.be/taKMGlkNZwQ?si=T6ErBBaJXudM6YKh">
+                    <div class="media-wrapper">
+                        <img src="assets/images/CAPA PIPACAST 05.jpg" alt="Episódio 05" class="episode-thumb">
+                        <div class="episode-preview-container"></div>
+                    </div>
+                    <div class="episode-info">
+                        <span class="episode-tag">Episódio #05</span>
+                        <h3 class="episode-title">A Beleza da Mulher Preta: Identidade e Consumo</h3>
+                        <div class="platforms-links">
+                            <a href="https://open.spotify.com/episode/2fGcTIG0MCo7wHm26rRABZ?si=a982372081e84649" target="_blank" class="platform-btn spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="https://youtu.be/taKMGlkNZwQ" target="_blank" class="platform-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="episode-card" data-video="https://youtu.be/M_DAnwghTKA?si=k0nQ0FkwxzCv1i1k">
+                    <div class="media-wrapper">
+                        <img src="assets/images/CAPA PIPACAST 04.jpg" alt="Episódio 04" class="episode-thumb">
+                        <div class="episode-preview-container"></div>
+                    </div>
+                    <div class="episode-info">
+                        <span class="episode-tag">Episódio #04</span>
+                        <h3 class="episode-title">Mercado Pet: O crescimento desse amor animal</h3>
+                        <div class="platforms-links">
+                            <a href="https://open.spotify.com/episode/2xkr6NNYH01ynMOXQG1jia?si=594fb8a1b6aa46da" target="_blank" class="platform-btn spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="https://youtu.be/M_DAnwghTKA" target="_blank" class="platform-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="episode-card" data-video="https://www.youtube.com/watch?v=MAkyf5YdINE">
+                    <div class="media-wrapper">
+                        <img src="assets/images/CAPA PIPACAST 03.jpg" alt="Episódio 03" class="episode-thumb"> 
+                        <div class="episode-preview-container"></div>
+                    </div>
+                    <div class="episode-info">
+                        <span class="episode-tag">Episódio #03</span>
+                        <h3 class="episode-title">Televisão: Cenário e o consumo dos streamings</h3>
+                        <div class="platforms-links">
+                            <a href="https://open.spotify.com/episode/1Osohf7ZISy0IwPwNWQRSK?si=77adb01ad7914004" target="_blank" class="platform-btn spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="https://youtu.be/MAkyf5YdINE" target="_blank" class="platform-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="episode-card" data-video="https://youtu.be/l6YCJmt5q64?si=4q7F4L5OprQ0-Rgp">
+                    <div class="media-wrapper">
+                        <img src="assets/images/CAPA PIPACAST 02.jpg" alt="Episódio 02" class="episode-thumb">
+                        <div class="episode-preview-container"></div>
+                    </div>
+                    <div class="episode-info">
+                        <span class="episode-tag">Episódio #02</span>
+                        <h3 class="episode-title">Carnaval 2023: O mundo se encontra aqui</h3>
+                        <div class="platforms-links">
+                            <a href="https://open.spotify.com/episode/4SqKufADjNpqYdf3pOH9Nb?si=5bb7750c26ea4146" target="_blank" class="platform-btn spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="https://youtu.be/l6YCJmt5q64" target="_blank" class="platform-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="episode-card" data-video="https://youtu.be/krUh3gTnFGY?si=EIbhu4f1TdLeyqQS">
+                    <div class="media-wrapper">
+                        <img src="assets/images/CAPA PIPACAST 01.jpg" alt="Episódio 01" class="episode-thumb">
+                        <div class="episode-preview-container"></div>
+                    </div>
+                    <div class="episode-info">
+                        <span class="episode-tag">Episódio #01</span>
+                        <h3 class="episode-title">Censo IBGE 2022: Panorama Geral sobre a Bahia</h3>
+                        <div class="platforms-links">
+                            <a href="https://open.spotify.com/episode/3CETRq6jCpCElMs74xmpYE?si=3a5fa025b6714ead" target="_blank" class="platform-btn spotify"><i class="fab fa-spotify"></i></a>
+                            <a href="https://youtu.be/krUh3gTnFGY&t=1s" target="_blank" class="platform-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer pipacast-theme" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="assets/images/Logo.png" alt="Pipa" class="footer-logo" style="filter: brightness(0) invert(1); width: 120px;">
+                    <h3>Vamos conversar?</h3>
+                    <p class="footer-desc">Entre em contato para sugestões de pauta ou parcerias.</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>E-mail</span>
+                                <a href="mailto:pipapesquisas@redebahia.com.br">pipapesquisas@redebahia.com.br</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span>Telefone</span>
+                                <a href="tel:+5571999572119">(71) 99957-2119</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-icons-footer">
+                        <a href="https://www.instagram.com/pipapesquisas?igsh=aXAwdGFrYjBpamow" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/pipa-pesquisas/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5571999572119" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@pipapesquisas6893?si=F_NABPdmzv22UxSZ" class="social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/show/5QJBDsa4493ztKgpn6NQhu?si=RSjDJvBPQIyOcQ3SSa7Zzw" class="social-btn"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>  
+
+                <div class="footer-form-area">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Seu Nome</label>
+                            <input type="text" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label>Seu E-mail</label>
+                            <input type="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea rows="3" required placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pipa Pesquisas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "logo_url": "assets/images/Logo.png",
+  "pesquisas": [
+    {
+      "id": "carnaval-2024-legado",
+      "titulo": "Carnaval 2024: O Legado da Folia",
+      "subtitulo": "O que ficou na memória e no bolso após a maior festa do planeta.",
+      "categoria": "Consumo",
+      "data": "Março 2024",
+      "autor": "Pipa Pesquisas",
+      "imagem_hero": "https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?q=80&w=2000&auto=format&fit=crop",
+      "resumo_home": "Análise pós-folia dos gastos, marcas mais lembradas e comportamento dos foliões baianos."
+    },
+    {
+      "id": "dia-das-maes-2025",
+      "titulo": "Dia das Mães 2025",
+      "subtitulo": "Como os baianos pretendem presentear",
+      "categoria": "Comportamento",
+      "data": "Abril 2025",
+      "autor": "Pipa Pesquisas",
+      "imagem_hero": "https://images.unsplash.com/photo-1542385151-efd9000785a0?q=80&w=689&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "resumo_home": "Análise do comportamento os baianos no dia das mães."
+    },
+    {
+      "id": "setor-imobiliario-2025",
+      "titulo": "Setor Imobiliário 2025: Quem casa, quer casa!",
+      "subtitulo": "Intenção de compra e o sonho da casa própria entre os baianos",
+      "categoria": "Tendências",
+      "data": "Setembro 2025",
+      "autor": "Pipa Pesquisas",
+      "imagem_hero": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop",
+      "resumo_home": "Análise do comportamento os baianos no setor imobiliário"
+    },
+    {
+      "id": "natal-2025",
+      "titulo": "Natal 2025: Como foi a visita do Papai Noel para os baianos",
+      "subtitulo": "Celebração e intenção de comememorar no mês de Dezembro",
+      "categoria": "Comportamento",
+      "data": "Outubro 2025",
+      "autor": "Pipa Pesquisas",
+      "imagem_hero": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "resumo_home": "Celebração e intenção de comememorar no mês de Dezembro."
+    },
+    {
+      "id": "namorados-2025",
+      "titulo": "Dia dos Namorados 2025: Consumo e Afeto",
+      "subtitulo": "Análise dos hábitos de consumo e comportamento dos casais baianos.",
+      "categoria": "Consumo",
+      "data": "Abril 2025",
+      "autor": "Pipa Pesquisas",
+      "imagem_hero": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2000&auto=format&fit=crop",
+      "resumo_home": "Descubra como os baianos comemoram, presenteiam e o que esperam para a data mais romântica do ano."
+    }
+  ]
+}

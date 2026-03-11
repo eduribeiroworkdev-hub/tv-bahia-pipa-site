@@ -1,0 +1,111 @@
+{
+  "id": "namorados-2025",
+  "template": "magazine",
+  "cores": {
+    "primaria": "#8B0000",
+    "secundaria": "#C71585",
+    "acento": "#FF69B4"
+  },
+  "hero": {
+    "imagem": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2000&auto=format&fit=crop",
+    "categoria": "Consumo",
+    "titulo": "Dia dos Namorados 2025",
+    "subtitulo": "Hábitos de Consumo e Comportamento dos Baianos",
+    "data": "Abril 2025",
+    "autor": "Pipa Pesquisas"
+  },
+  "contexto": {
+    "titulo": "O Cenário do Dia dos Namorados",
+    "texto": "O Dia dos Namorados é a sexta data comemorativa mais relevante para o varejo brasileiro. Na Bahia, o mês de junho ganha ainda mais importância para o comércio, impulsionado também pelas celebrações de São João. Em 2024, as vendas no estado registraram crescimento de 5,3%, desempenho superior à média nacional."
+  },
+  "metodologia": {
+    "resumo": "Pesquisa Quantitativa realizada em campo em abril de 2025.",
+    "itens": [
+      { "icone": "fas fa-users", "texto": "1.193 respondentes" },
+      { "icone": "fas fa-calendar-alt", "texto": "Período: Abril de 2025" },
+      { "icone": "fas fa-chart-bar", "texto": "Método: Pesquisa Quantitativa" },
+      { "icone": "fas fa-map-marker-alt", "texto": "Estado da Bahia" }
+    ]
+  },
+  "amostra": {
+    "total": 1193,
+    "distribuicao": {
+      "relacionamento": [
+        { "label": "Heteroafetivo", "percentual": 77 },
+        { "label": "Homoafetivo", "percentual": 21 },
+        { "label": "Monogâmico", "percentual": 86 },
+        { "label": "Aberto", "percentual": 9 }
+      ],
+      "status": {
+        "Namorando": "17%",
+        "Casados(as)": "15%",
+        "Relacionamento Casual": "7%",
+        "Noivos": "4%"
+      }
+    }
+  },
+  "blocos": [
+    {
+      "tipo": "faixa_destaque",
+      "icone": "fas fa-heart",
+      "texto": "72% dos entrevistados costumam comemorar o Dia dos Namorados",
+      "subtexto": "A data mantém sua força mesmo com variações no tempo de relacionamento."
+    },
+    {
+      "tipo": "grid_insights",
+      "titulo": "Expectativas para 2025",
+      "subtitulo": "O que os baianos esperam da data",
+      "insights": [
+        { "icone": "fas fa-handshake", "texto": "4 em cada 10 buscam fortalecer o relacionamento." },
+        { "icone": "fas fa-clock", "texto": "3 em cada 10 querem passar mais tempo juntos." }
+      ]
+    },
+    {
+      "tipo": "layout_imagem_texto",
+      "posicao_imagem": "direita",
+      "imagem": "https://images.unsplash.com/photo-1516589174184-c685266d430c?q=80&w=1200&auto=format&fit=crop",
+      "titulo": "Vai ter presente SIM!",
+      "texto": "6 em cada 10 entrevistados pretendem presentear a pessoa amada este ano. Perfumes (35%) e Chocolates/Doces (27%) lideram a lista de desejos."
+    },
+    {
+      "tipo": "grafico_barras_horizontal",
+      "titulo": "Variedade de Presentes",
+      "dados": [
+        { "label": "Perfumes", "valor": 35, "cor": "#8B0000" },
+        { "label": "Chocolates/Doces", "valor": 27, "cor": "#C71585" },
+        { "label": "Roupas", "valor": 27, "cor": "#C71585" },
+        { "label": "Flores", "valor": 20, "cor": "#FF69B4" },
+        { "label": "Acessórios", "valor": 16, "cor": "#FF69B4" }
+      ]
+    },
+    {
+      "tipo": "grafico_colunas",
+      "titulo": "Quanto pretendem gastar?",
+      "dados": [
+        { "label": "Até R$ 50", "valor": 4 },
+        { "label": "R$ 50-R$ 100", "valor": 10 },
+        { "label": "R$ 101-R$ 200", "valor": 29 },
+        { "label": "R$ 201-R$ 300", "valor": 31 },
+        { "label": "R$ 301-R$ 400", "valor": 26 }
+      
+      ]
+    },
+    {
+      "tipo": "caixa_destaque",
+      "titulo": "Forma de Pagamento",
+      "texto": "O uso do cartão de crédito próprio cresceu 19% em relação a 2024, sendo a escolha de 56% dos consumidores."
+    },
+    {
+      "tipo": "layout_imagem_texto",
+      "posicao_imagem": "esquerda",
+      "imagem": "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200&auto=format&fit=crop",
+      "titulo": "O que influencia a compra?",
+      "texto": "87% levam em conta as dicas da própria pessoa que vão presentear. A publicidade em TV/Internet influencia 14% dos compradores."
+    },
+    {
+      "tipo": "citacao",
+      "texto": "Um presente bem pensado é mais que especial. O Dia dos Namorados na Bahia é uma mistura de afeto e movimentação econômica estratégica.",
+      "autor": "Análise Pipa Pesquisas"
+    }
+  ]
+}

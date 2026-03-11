@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando Pesquisa... | Pipa Pesquisas</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos (SEM /css/ no caminho!) -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/pesquisa-dinamica.css">
+</head>
+<body class="pesquisa-dinamica">
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img id="logo-pipa" src="assets/images/Logo.png" alt="Pipa Pesquisas">
+                </a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="podcast.html" class="nav-link">Podcast</a></li>
+                    <li><a href="#contato" class="nav-link btn-nav-contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT (será preenchido pelo JavaScript) -->
+    <main id="pesquisa-main">
+        <!-- O conteúdo será inserido aqui pelo JavaScript -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="assets/images/Logo.png" alt="Pipa" class="footer-logo" style="filter: brightness(0) invert(1); width: 120px;"> 
+                    <h3>Vamos conversar?</h3>
+                    <p class="footer-desc">Entre em contato para pesquisas sob demanda ou dúvidas.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>E-mail</span>
+                                <a href="/cdn-cgi/l/email-protection#4b2824253f2a3f240b3b223b2a3b2e383a3e22382a3865282426652939"><span class="__cf_email__" data-cfemail="60030f0e1401140f20100910011005131115091301134e030f0d4e0212">[email&#160;protected]</span></a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span>Telefone</span>
+                                <a href="tel:+5571999572119">(71) 99957-2119</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-icons-footer">
+                        <a href="https://www.instagram.com/pipapesquisas?igsh=aXAwdGFrYjBpamow" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/pipa-pesquisas/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5571999572119" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@pipapesquisas6893?si=F_NABPdmzv22UxSZ" class="social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/show/5QJBDsa4493ztKgpn6NQhu?si=RSjDJvBPQIyOcQ3SSa7Zzw" class="social-btn"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-form-area">
+                    <h3>Gostou da pesquisa?</h3>
+                    <p style="color: #ccc; margin-bottom: 20px;">Entre em contato para pesquisas customizadas.</p>
+                    <a href="index.html#contato" class="btn-submit" style="display: block; text-align: center; text-decoration: none;">Falar com Especialista</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pipa Pesquisas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/main.js"></script>
+    <script src="assets/pesquisa-renderer.js"></script>
+
+</body>
+</html>
